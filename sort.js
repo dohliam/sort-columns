@@ -15,14 +15,14 @@ function uniq() {
 }
 
 function unique(a) {
-  uniq = new Array(0);
+  u = new Array(0);
   for(i=0;i<a.length;i++){
-    if(!contains(uniq, a[i])){
-      uniq.length+=1;
-      uniq[uniq.length-1]=a[i];
+    if(!contains(u, a[i])){
+      u.length+=1;
+      u[u.length-1]=a[i];
     }
   }
-  return uniq;
+  return u;
 }
 
 function contains(a, e) {
@@ -62,7 +62,7 @@ function random() {
   for (item in a) {
     b.push(Math.random() + "@@" + a[item]);
   }
-  c = b.sort().join(outsep.value).replace(/\\n/g, "\n").replace(/\\t/g, "\t").replace(/0\.[\d]+@@/g, "")
+  c = b.sort().join(outsep.value).replace(/\\n/g, "\n").replace(/\\t/g, "\t").replace(/0\.[\d]+@@/g, "");
   sort_col.value = c;
 }
 
