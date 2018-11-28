@@ -71,5 +71,5 @@ function reverse() {
   insep = document.getElementById("insep");
   sortarray = sort_col.value.split(insep.value.replace(/\\n/g, "\n").replace(/\\t/g, "\t"));
   outsep = document.getElementById("outsep");
-  sort_col.value = sortarray.sort().reverse().join(outsep.value).replace(/\\n/g, "\n").replace(/\\t/g, "\t");
+  sort_col.value = sortarray.reverse().join(outsep.value).replace(/\\n/g, "\n").replace(/\\t/g, "\t");
 }
